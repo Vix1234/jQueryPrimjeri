@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>      
+    </head>   
+    <body>
+        <h2>Naslov</h2>
+        <input id="button1" type="button" value="Toggle sa trajanjem"/>
+        <script>
+            $(document).ready(function() {
+                $("#button1").click(function(){
+                    $("h2").toggle(2000);
+                });
+            });                                    
+        </script>           
+    </body>
+</html>    

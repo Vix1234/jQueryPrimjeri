@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>
+        <style>
+            div{
+                width:60px;
+                height:60px;
+                margin:10px;
+                float:left;
+                background: blue;
+                border: 2px solid black;
+                cursor: pointer;
+            }        
+        </style>        
+    </head>   
+    <body>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <script>
+            $(document).ready(function() {
+                $("div").one("click", function(){
+                    $(this).css({
+                        background:"red"
+
+                    });
+                    alert("Izvrsice se samo jednom!");
+                });
+            });
+            /*$(document).ready(function() {
+                $("div").on("click", function(event){
+                    $(this).css({
+                        background:"red"
+                    });
+                    alert("Izvrsice se samo jednom!");
+                    $(this).off(event);
+                });
+           
+            });*/
+                                        
+        </script>           
+    </body>
+</html>    

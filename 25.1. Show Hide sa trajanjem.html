@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>        
+    </head>   
+    <body>
+        <h2>Show/Hide elemenata sa trajanjem</h2>
+        <img id="slika1" src="img/coffee4.jpg" >
+        <br/>
+        <input id="buttonShow" type="button" value="Show" onclick="prikazi_sliku()" disabled/>
+        <input id="buttonHide" type="button" value="Hide" onclick="sakrij_sliku()"/>
+        <p id="p1"></p>       
+        <script> 
+            function sakrij_sliku(){
+                 $("#slika1").hide(2000,nakonSakrivanja);               
+            } 
+            function nakonSakrivanja(){
+                $("#buttonShow").removeAttr("disabled");
+                $("#buttonHide").attr("disabled", "true");
+                $("#p1").text("Slika je skrivena");
+            } 
+            function prikazi_sliku(){
+                 $("#slika1").show(2000, nakonPrikazivanja);               
+            }
+            function nakonPrikazivanja(){
+                $("#buttonHide").removeAttr("disabled");
+                $("#buttonShow").attr("disabled", "true");
+                $("#p1").text("");
+            }                            
+        </script>           
+    </body>
+</html>    

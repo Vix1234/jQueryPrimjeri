@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>
+        <style>
+            .a{
+                color: #2f48d8;  
+            }
+            .b{
+                color: #e51e1e;
+            }
+        </style>    
+    </head>   
+    <body>
+        <h1>Hello world</h1>
+        <ul id="list1">
+            <li class="a">Stavka 1</li>
+            <li class="a">Stavka 2</li>
+            <li class="b">Stavka 3</li>
+            <li class="b">Stavka 4</li>
+        </ul>
+        <p class="a">Paragraf 1</p>
+        <p id="param1">Paragraf 2</p>   
+        <p class="b">Paragraf 3</p>   
+        <p id="param2">Paragraf 4</p>            
+        <script>
+            $(document).ready(function() {
+                $("p[class]").css("border","5px solid blue");
+                //$("p[class=a]").css("border","5px solid blue");
+                //$("p[id^=param]").css("border", "3px solid green");
+                //$("p:contains(3)").css("border", "2px solid black");
+                /*$("h1").css({
+                    "font-size" : "25px",
+                    "color" : "red"
+                })*/
+            })                
+        </script>           
+    </body>
+</html>    

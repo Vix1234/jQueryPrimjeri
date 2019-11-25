@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>   
+    </head>   
+    <body>
+        <ul id="ul1">
+            <li class="a">Stavka 1</li>
+            <li class="a">Stavka 2</li>
+            <li class="b">Stavka 3</li>            
+        </ul> 
+        <br>
+        <div id="div1"></div>                
+        <script>
+            $(document).ready(function() {
+                $("#ul1").append("<li>Nova Stavka</li>");
+                for(var i=0; i<10; i++){
+                    $("#div1").append("<p> Paragraf " + (i+1).toString() + "</p>");
+                } 
+                $("#ul1").prepend("<li>Nova Stavka 0</li>");
+                             
+            })                
+        </script>           
+    </body>
+</html>    

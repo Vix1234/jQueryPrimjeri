@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>     
+    </head>   
+    <body>                
+        <script>
+            $(document).ready(function() {
+                var osoba = {"Ime":"Petar", "Prezime":"Petrovic", "Starost": "30"};
+                $.each(osoba, function(kljuc,vrijednost){
+                    document.write("Kljuc je: " + kljuc + " Vrijednost je: "  + vrijednost + "<br/>");
+                })
+            })                
+        </script>           
+    </body>
+</html>    

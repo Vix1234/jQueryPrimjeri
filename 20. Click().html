@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>        
+    </head>   
+    <body>
+        <h2>Kliknite na sliku</h2>
+        <img id="slika1" src="img/coffee4.jpg"/>         
+        <br/>
+        <script>
+            $(document).ready(function() {
+                $("#slika1").click(Slika1_Click);
+            });
+            function Slika1_Click(){
+                alert("Kliknuli ste na sliku!");
+            }
+            /*$(document).ready(function() {
+                $("#slika1").click(function(){
+                    alert("Kliknuli ste na sliku!");
+                });
+            }); */                                
+        </script>           
+    </body>
+</html>    

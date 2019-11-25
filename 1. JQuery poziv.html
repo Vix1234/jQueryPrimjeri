@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <!--<script src="jquery-3.4.1.min.js"></script>!-->         
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous"></script>    
+    </head>   
+    <body>
+        <div id="sadrzaj">Sadrzaj strane</div>         
+        <script>
+          jQuery(document).ready(function() {
+                alert("Strana je ucitana!");
+                $("#sadrzaj").css("background-color", "blue");
+            });
+           /*$(function(){
+               $("#sadrzaj").css("color", "red").slideUp(2000).slideDown(2000);
+            });*/
+        </script>           
+    </body>
+</html>    

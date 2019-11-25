@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>                  
+    </head>   
+    <body>
+        <form>
+            <label for="Text1">Unesite prvi operand:</label>
+            <input id="text1" type="text"/>
+            <br/>
+            <label for="Text2">Unesite drugi operand:</label>
+            <input id="text2" type="text"/>
+            <br/>
+            <br/>
+            <br/>
+            <input id="Button1" type="button" value="Izracunaj" onclick="izracunaj()">
+        </form>
+        <script>
+            function izracunaj(){
+                var prvi = $("#text1").val();
+                var a = parseFloat(prvi);
+                var drugi = $("#text2").val();
+                var b = parseFloat(drugi);
+                var zbir = a + b;
+                alert("Zbir je " + zbir);
+                $("#text1").val("");
+                $("#text2").val("");
+            }                        
+        </script>           
+    </body>
+</html>    

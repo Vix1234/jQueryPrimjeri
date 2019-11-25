@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>     
+    </head>   
+    <body>
+        <img src="img/coffee1.jpg"/>
+        <img src="img/coffee2.png"/>
+        <img src="img/coffee3.jpg"/>
+        <img src="img/coffee4.jpg"/>
+        <br/>
+        <input type="button" onclick="setDimensions()" value="Poravnaj" />
+
+        <script>
+            $(document).ready(function() {
+                alert($("img:first").attr("src"));
+            })
+            /*function setDimensions() {
+                $("img").attr("height", "150");
+                $("img").attr("width", "150");
+            }*/
+
+            /*$("img:first").attr({
+                src: "img/coffee5.jpg",
+                title: "kafa",
+                alt: "slika kafe"
+            }) */             
+        </script>           
+    </body>
+</html>    

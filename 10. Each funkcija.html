@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>   
+    </head>   
+    <body>
+        <p></p>
+        <p></p>
+        <p></p> 
+
+        <script>
+            $(document).ready(function() {
+                var sirina=200;
+                $("p").each(function(){
+                    $(this).css({
+                        width: sirina,
+                        height: "30px",
+                        padding: "10px",
+                        color: "red",
+                        "border": "3px solid black",
+                        "background-color":"red"
+                    });
+                sirina += 10;
+                });
+            });              
+        </script>           
+    </body>
+</html>    

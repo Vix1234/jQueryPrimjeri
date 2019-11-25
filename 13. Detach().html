@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>        
+    </head>   
+    <body>
+        <div id="div1">
+            <button type="button" onclick="prikazi()">Sakrij</button>
+            <p>Paragraf</p>
+        </div>        
+        <script>
+            var p;
+            function prikazi(){
+                if(p){
+                    p.appendTo("#div1");
+                    $("button").text("Sakrij");
+                    p = null;
+                }
+                else{
+                    p=$("p").detach();
+                    $("button").text("Prikazi");
+                }
+            }              
+        </script>           
+    </body>
+</html>    

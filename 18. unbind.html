@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>        
+    </head>   
+    <body>
+        <img id="slika1" src="img/coffee4.jpg" width="100"> 
+        <br/>
+        <input id="button1" type="button" value="Odjavi" onclick="odjava()"/>      
+        <script>
+            $(document).ready(function() {
+                $("#slika1").bind("click", function(){
+                    var sirina = parseInt($("#slika1").attr("width"));
+                    sirina += 100;
+                    $("#slika1").attr("width", sirina);
+                });
+            });
+            function odjava(){
+                $("#slika1").unbind("click");
+            }         
+        </script>           
+    </body>
+</html>    

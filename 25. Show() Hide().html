@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>      
+    </head>   
+    <body>       
+       <div id="div1">
+            <p>Show/Hide elemenata</p>
+       </div>
+       <br/>
+        <input id="buttonShow" type="button" value="Show"/>
+        <input id="buttonHide" type="button" value="Hide"/>
+        <input id="buttonToggle" type="button" value="Toggle"/>
+        <script>
+            $(document).ready(function() {
+                $("#buttonShow").click(function(){
+                    $("#div1").show("normal");
+                });
+                $("#buttonHide").click(function(){
+                    $("#div1").hide("slow");
+                });
+                $("#buttonToggle").click(function(){
+                    $("#div1").toggle("slow");
+                });
+            });                                    
+        </script>           
+    </body>
+</html>    

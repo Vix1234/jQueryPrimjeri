@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>        
+    </head>   
+    <body>
+        <img id="slika1" src="img/coffee4.jpg" width="100">       
+        <script>
+            $(document).ready(function() {
+                $("#slika1").bind("click", slika1_click);
+            });
+            function slika1_click(){
+                var sirina = $("#slika1").attr("width");
+                if( sirina == 100){
+                    $("#slika1").attr("width", "200");
+                }
+                else{
+                    $("#slika1").attr("width", "100");
+                }
+            }
+            //Opcija 2:
+            /*$(document).ready(function() {
+                $("#slika1").bind("click", function(){
+                    var sirina = $("#slika1").attr("width");
+                    if( sirina == 100){
+                        $("#slika1").attr("width", "200");
+                    }
+                    else{
+                        $("#slika1").attr("width", "100");
+                    }
+                });
+            });*/
+                        
+        </script>           
+    </body>
+</html>    

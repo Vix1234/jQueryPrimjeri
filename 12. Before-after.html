@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery</title>
+        <meta charset="utf-8"> 
+        <script src="jquery-3.4.1.min.js"></script>        
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>-->    
+    </head>   
+    <body>
+        <div id="glavni">Glavna oblast
+            <div id="div3">Treci div</div>
+        </div>        
+        <script>
+            var div1 = $("<div id='div1'>Prvi div </div>");
+            var div2 = document.createElement("div");
+            div2.id = "div2";
+            div2.textContent = "Drugi div";
+            var div3 = document.getElementById("div3");
+            $(document).ready(function() {
+                $("#glavni").css("color", "red");
+                $("#glavni").after(div1,div2, div3);
+            })                
+        </script>           
+    </body>
+</html>    
