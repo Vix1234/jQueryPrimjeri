@@ -3,7 +3,7 @@
     <head>
         <title>JQuery</title>
         <meta charset="utf-8"> 
-        <script src="jquery-3.4.1.min.js"></script>
+        <script src="jquery-3.5.1.min.map"></script>
         <style>
             div{
                 width:60px;
@@ -22,7 +22,7 @@
         <div></div>
         <div></div>
         <script>
-            $(document).ready(function() {
+            /*$(document).ready(function() {
                 $("div").one("click", function(){
                     $(this).css({
                         background:"red"
@@ -30,8 +30,8 @@
                     });
                     alert("Izvrsice se samo jednom!");
                 });
-            });
-            /*$(document).ready(function() {
+            });*/
+            $(document).ready(function() {
                 $("div").on("click", function(event){
                     $(this).css({
                         background:"red"
@@ -40,7 +40,7 @@
                     $(this).off(event);
                 });
            
-            });*/
+            });
                                         
         </script>           
     </body>
